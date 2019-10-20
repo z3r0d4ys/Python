@@ -27,7 +27,7 @@ sag_geri = 23
 sag_en = 25
 
 p = 0
-i = 0
+#i = 0
 d = 0
 t = 0
 
@@ -91,7 +91,7 @@ def pid_kontrol(error,en2=0):
    error_lst = error
 
    p = P_K * error
-   i = i + (I_K * error_dif)
+   #i = i + (I_K * error_dif)
    d = D_K * error_dif
    t = p + d
    t = t
