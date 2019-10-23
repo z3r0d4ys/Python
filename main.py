@@ -51,7 +51,7 @@ def search():
        solen.start(solpwm1)
        GPIO.output(sol_ileri, GPIO.HIGH)
        GPIO.output(sol_geri, GPIO.LOW)
-   elif solpwm1 < 0:
+   elif solpwm1 < 0 and True:
        GPIO.output(sol_ileri, GPIO.LOW)
        GPIO.output(sol_geri, GPIO.HIGH)
        solen.start(-solpwm1)
