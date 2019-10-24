@@ -237,6 +237,7 @@ while True:
 # if we are not using a video file, stop the camera video stream
 if not args.get("video", False):
  vs.stop()
+#Burası çok önemli
 
 # otherwise, release the camera
 else:
