@@ -3,6 +3,7 @@ from imutils.video import VideoStream
 import numpy as np
 import argparse
 import cv2
+import this
 import imutils
 import time
 import picamera
@@ -51,7 +52,7 @@ def search():
        solen.start(solpwm1)
        GPIO.output(sol_ileri, GPIO.HIGH)
        GPIO.output(sol_geri, GPIO.LOW)
-   elif solpwm1 < 0:
+   elif solpwm1 < 0 and True:
        GPIO.output(sol_ileri, GPIO.LOW)
        GPIO.output(sol_geri, GPIO.HIGH)
        solen.start(-solpwm1)
@@ -236,6 +237,7 @@ while True:
 # if we are not using a video file, stop the camera video stream
 if not args.get("video", False):
  vs.stop()
+#Burası çok önemli
 
 # otherwise, release the camera
 else:
