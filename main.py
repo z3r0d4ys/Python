@@ -1,4 +1,4 @@
-from collections import deque
+from collections import deque  #include libraries
 from imutils.video import VideoStream
 import numpy as np
 import argparse
